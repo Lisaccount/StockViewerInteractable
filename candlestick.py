@@ -122,7 +122,6 @@ class Candlestick:
 
         # create new view from dataframe
         df_view = self.df.iloc[start:end]
-        print(df_view.shape, df_view.dropna().shape)
 
         # create new source
         new_source = df_view.to_dict(orient='list')
